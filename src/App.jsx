@@ -18,7 +18,7 @@ function App() {
   return (
     <main>
       <h1>Introdução a API</h1>
-
+      
       <div className='intro'>
         <p>API significa Application Programming Interface (Interface de Programação de Aplicações). É um conjunto de regras e definições que permite que diferentes sistemas se comuniquem entre si. </p>
         <p>Na prática, uma API funciona como uma ponte que conecta seu aplicativo ou site a outros sistemas ou serviços, permitindo que você use funcionalidades ou dados de terceiros sem precisar criar tudo do zero. Por exemplo, ao usar o Google Maps em um app de delivery ou acessar dados de um filme em uma plataforma, você provavelmente está interagindo com APIs.</p>
