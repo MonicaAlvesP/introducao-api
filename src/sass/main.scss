@@ -57,6 +57,24 @@ main {
   color: #02afc6;
   text-shadow: 0 0 5px #000, 0 0 20px #a8ff13;
   font-size: 3rem;
+  animation: pulse 2s infinite;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #000, 0 0 20px #a8ff13;
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #000, 0 0 30px #a8ff13;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #000, 0 0 20px #a8ff13;
+  }
 }
 
 .api {
@@ -71,6 +89,7 @@ main {
   .character {
     background: linear-gradient(90deg, #41295a 0%, #2f0743 100%);
     padding: 1rem;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
     color: #fff;
