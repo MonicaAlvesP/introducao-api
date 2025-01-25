@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'RickAndMortyFont';
+  src: url('../assets/fonts/get_schwifty.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$rick-font: 'RickAndMortyFont', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../assets/wallpaper.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../assets/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: cursive;
+}
+
+main {
+  text-align: center;
+
+  h1 {
+    margin: 2rem 0;
+    color: #0de3ff;
+  }
+}
+
+.intro {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: 80%;
+  margin: 1rem auto;
+
+  p {
+    margin: 1rem 0;
+    color: #fff;
+  }
+
+  span {
+    color: #02afc6;
+    background-color: #323232;
+    padding: 0.3rem;
+    border-radius: 10px;
+  }
+}
+
+.title-desenho {
+  font-family: $rick-font;
+  color: #02afc6;
+  text-shadow: 0 0 5px #000, 0 0 20px #a8ff13;
+  font-size: 3rem;
+}
+
+.api {
+  padding: 2rem;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+
+  .character {
+    background: linear-gradient(90deg, #41295a 0%, #2f0743 100%);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #fff;
+
+    img {
+      width: 80%;
+      border-radius: 50%;
+    }
+
+    h2 {
+      margin: 1rem 0;
+      color: #02afc6;
+    }
+  }
+}
